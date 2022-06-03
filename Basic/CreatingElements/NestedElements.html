@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+        <style>
+            #para-id {
+                color:green;
+            }
+            h2 {
+                color:red;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="my-react-app">
+
+        </div>
+
+        <script>
+            var el = React.createElement("div", 
+                                         { id:"inner-div-id", key:"uniq-react-key-1" }, 
+                                         React.createElement("h2", 
+                                                             { id:"header-id" },
+                                                             "Welcome to the world of React"
+                                                            )
+                                        );
+
+            var another_el = React.createElement("p", 
+                                                 { id:"para-id", key:"uniq-react-key-2"}, 
+                                                 "React seems reather tedious to work with."
+                                                );
+
+            var element_list = [el, another_el];
+
+            var outer_div_el = React.createElement("div", { id:"outer-div-id" }, element_list);
+
+            ReactDOM.render(outer_div_el, document.getElementById("my-react-app"));
+        </script>
+    </body>
+</html>

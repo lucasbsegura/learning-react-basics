@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+        <style>
+            .class-highlight {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            class MyFirstComponent extends React.Component {
+                render() {
+                    return (
+                        <div>
+                            <h2 className="class-highlight">Hello World Component</h2>
+                        </div>
+                    )
+                }
+            }    
+            
+            ReactDOM.render(<MyFirstComponent />, document.getElementById("root"));
+        </script>
+    </body>
+</html>
