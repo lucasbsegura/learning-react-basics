@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+        <style>
+            .bt {
+                padding: 10px 10px;
+                border: 10px solid;
+                width: 350px;
+            }
+            .bt-green {
+                border-color: green;
+            }
+            .bt-red {
+                border-color: red;
+            }
+            .bt-orange {
+                border-color: orange;
+            }
+            .bt-light {
+                border-color: yellow;
+            }
+            .bt-dark {
+                border-color: green;
+            }
+            .bg-green {
+                background-color: #ebfaeb;
+            }
+            .bg-red {
+                background-color: #ffebe6;
+            }
+            .bg-orange {
+                background-color: lightcoral;
+            }
+            .bg-light {
+                background-color: lightyellow;
+            }
+            .bg-dark {
+                background-color: lightgreen;
+            }
+            .greeting-title {
+                color: blue;
+                font-family: sans-serif;
+            }
+            .greeting-message {
+                color: #cc0099;
+                font-size: larger;
+            }
+            .contents {
+                color: orangered;
+                margin: 12px;
+                padding: 12px;
+                border: 1px solid greenyellow;
+                width:200px;
+            }
+            .input {
+                margin-top: 2px;
+                padding: 2px;
+                display: block;
+                width: 180px;
+                font-size: 14px;
+            }
+            .dialog-light {
+                border: 5px solid yellow;
+                padding: 10px;
+                width: 300px;
+                background-color: lightyellow;
+            }
+            .dialog-dark {
+                border: 5px solid green;
+                padding: 10px;
+                width: 300px;
+                background-color: lightgreen;
+            }
+            .button {
+                margin-top: 12px;
+                display: block;
+                border: 1px solid orangered;
+                color: black;
+                width: 100px;
+                cursor: pointer;
+                line-height: 26px;
+                font-size: 14px;
+                background-color: #cccc00;
+            }
+            .button-light {
+                margin-top: 12px;
+                display: block;
+                border: 1px solid yellow;
+                color: black;
+                width: 100px;
+                cursor: pointer;
+                line-height: 26px;
+                font-size: 14px;
+                background-color: lightyellow;
+            }
+            .button-dark {
+                margin-top: 12px;
+                display: block;
+                border: 1px solid green;
+                color: black;
+                width: 100px;
+                cursor: pointer;
+                line-height: 26px;
+                font-size: 14px;
+                background-color: lightgreen;
+            }
+            .button:hover {
+                background-color: #808000;
+            }
+            label {
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="react-context"></div>
+        <script type="text/babel" src="Context.js"></script>
+    </body>
+</html>
